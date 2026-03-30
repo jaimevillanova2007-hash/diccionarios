@@ -1,0 +1,14 @@
+persona = {
+    "nombre": "Jaime",
+    "edad": 18,
+    "hobbies": ["baloncesto", "videojuegos", "música"]
+}
+
+# Mostrar todo el diccionario
+print(persona)
+
+# Mostrar la lista completa
+print(persona["hobbies"])
+
+# Mostrar un elemento de la lista
+print(persona["hobbies"][0])
