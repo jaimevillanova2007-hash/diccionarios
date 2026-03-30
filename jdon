@@ -1,0 +1,33 @@
+{
+  "persona": {
+    "nombre": "Jaime",
+    "edad": 17,
+    "ciudad": "Bogotá",
+    "activo": true
+  },
+  "frutas": ["manzana", "banana", "naranja"],
+  "inventario": [
+    {
+      "nombre": "Laptop",
+      "precio": 2500,
+      "cantidad": 5
+    },
+    {
+      "nombre": "Mouse",
+      "precio": 50,
+      "cantidad": 20
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Ana",
+      "email": "ana@gmail.com"
+    },
+    {
+      "id": 2,
+      "nombre": "Luis",
+      "email": "luis@gmail.com"
+    }
+  ]
+}
