@@ -1,0 +1,80 @@
+# Lista de estudiantes
+estudiantes = []
+
+# Funciones
+def registrar():
+    id = input("ID: ")
+    nombre = input("Nombre: ")
+    edad = input("Edad: ")
+    curso = input("Curso: ")
+    estado = input("Estado: ")
+
+    estudiante = {
+        "id": id,
+        "nombre": nombre,
+        "edad": edad,
+        "curso": curso,
+        "estado": estado
+    }
+
+    estudiantes.append(estudiante)
+    print("Estudiante agregado")
+
+def mostrar():
+    if len(estudiantes) == 0:
+        print("No hay estudiantes")
+    else:
+        for e in estudiantes:
+            print(e)
+
+def buscar():
+    x = input("Ingrese ID o nombre: ")
+    for e in estudiantes:
+        if x == e["id"] or x == e["nombre"]:
+            print(e)
+
+def eliminar():
+    x = input("ID a eliminar: ")
+    for e in estudiantes:
+        if e["id"] == x:
+            estudiantes.remove(e)
+            print("Eliminado")
+
+def actualizar():
+    x = input("ID a actualizar: ")
+    for e in estudiantes:
+        if e["id"] == x:
+            e["nombre"] = input("Nuevo nombre: ")
+            e["edad"] = input("Nueva edad: ")
+            e["curso"] = input("Nuevo curso: ")
+            e["estado"] = input("Nuevo estado: ")
+            print("Actualizado")
+
+# Menú
+op = ""
+
+while op != "6":
+    print("\n--- MENÚ ---")
+    print("1. Registrar")
+    print("2. Mostrar")
+    print("3. Buscar")
+    print("4. Actualizar")
+    print("5. Eliminar")
+    print("6. Salir")
+
+    op = input("Opción: ")
+
+    if op == "1":
+        registrar()
+    elif op == "2":
+        mostrar()
+    elif op == "3":
+        buscar()
+    elif op == "4":
+        actualizar()
+    elif op == "5":
+        eliminar()
+    elif op == "6":
+        print("Adiós")
+    else:
+        print("Opción inválida")
