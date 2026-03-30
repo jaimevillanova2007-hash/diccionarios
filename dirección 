@@ -1,0 +1,21 @@
+estudiantes = {
+    "estudiante1": {
+        "nombre": "Juan",
+        "edad": 17,
+        "curso": "11A"
+    },
+    "estudiante2": {
+        "nombre": "María",
+        "edad": 16,
+        "curso": "10B"
+    },
+    "estudiante3": {
+        "nombre": "Carlos",
+        "edad": 18,
+        "curso": "11C"
+    }
+}
+
+# Acceder a datos
+print(estudiantes["estudiante1"]["nombre"])  # Juan
+print(estudiantes["estudiante2"]["edad"])    # 16
